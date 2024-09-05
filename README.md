@@ -10,9 +10,9 @@
 
 # 🟪 BackEnd Project Structure 🟪
 
-<center>
-![Backend Structure](https://github.com/user-attachments/assets/8cd3314a-ffc6-454b-944a-3f79754396e9)
-</center>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f99e33c6-d878-4bd8-991b-080f8e30b25c" alt="Backend Structure" />
+</p>
       
 ## Config ▶
 ![SecurityConfig](https://github.com/user-attachments/assets/28641a21-0e15-49a1-93be-906fb2823abc)
