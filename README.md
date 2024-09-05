@@ -90,10 +90,48 @@ Before you begin, ensure you have the following installed on your machine:
 
 ### Clone the Spring Boot Project
 
-```bash
-git clone <repository_url>
-cd <project_directory>
+1. Clone the repository: ```https://github.com/SE-LAPS/Fully-Functional-Job-Portal-System-BackEnd.git```
+2. Run the Spring Boot Application
+      You can run the Spring Boot application in two ways:
+         Via IDE
+            1-Open the Spring Boot project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse).
+            2-Right-click the main application class (annotated with @SpringBootApplication).
+            3-Select Run.
+         Via Command Line
+           1-Open a terminal.
+           2-Navigate to the root directory of your Spring Boot project: ```./mvnw spring-boot:run```
+3.The backend should now be running, typically on: ```http://localhost:8080``` 
 
+## 3. Set Up and Run the React.js Frontend
+
+1. Download and install Node.js from the official Node.js website:```https://nodejs.org/en```
+2. Install Project Dependencies
+3. Open a terminal.
+4. Navigate to the root directory of your React project: ```npm install```
+5. Run the React.js Application: ```npm start```
+6. By default, the React frontend will be running on:``` http://localhost:3000.```
+
+## 4. Connect Frontend to Backend
+
+1. Spring Boot backend is running on:```http://localhost:8080```
+2. Check CORS Configuration:```@Configuration
+public class WebConfig implements WebMvcConfigurer {
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**").allowedOrigins("http://localhost:3000");
+    }
+}```
+
+## 5. Verify Everything is Running
+
+1. Check Backend:```http://localhost:8080/api/endpoint```
+2. Check Frontend:``` http://localhost:3000```
+3. Troubleshooting:
+         1.MySQL Connection Issues: Ensure that MySQL server is running and that you've configured the correct username and password in your Spring Boot application.properties or application.yml.
+         2.CORS Issues: Double-check your CORS configuration in the Spring Boot application.
+         3.Frontend Errors: Open the browser console (F12) to view any frontend errors and address them accordingly.
+   
+### Install Node.js and npm
 
 # 🟨 Tested Results Using Postman API 🟨
 
