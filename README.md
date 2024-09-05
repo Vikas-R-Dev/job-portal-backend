@@ -1,4 +1,4 @@
-# Fully-Functional-Job-Portal-System-BackEnd ![Java Logo](https://w7.pngwing.com/pngs/405/878/png-transparent-java-logo-java-runtime-environment-computer-icons-java-platform-standard-edition-java-miscellaneous-text-logo-thumbnail.png) ![Spring Boot Logo](https://spring.io/img/homepage/illustration-spring-boot.svg)
+# 🟥 Fully-Functional-Job-Portal-System-BackEnd 
       ⏩DEA-II GROUP PROJECT GROUP_06⏪ 
 
       
@@ -8,7 +8,7 @@
 ![Screenshot 2024-06-29 094812](https://github.com/SE-LAPS/Fully-functional-Job-Portal-System/assets/87580847/23eaa99d-23c9-4486-9c72-54986a48efd2)
 
 
-# BackEnd Project Structure ![Structure Logo](https://img.icons8.com/material-outlined/24/diagram.png)
+# 🟪 BackEnd Project Structure
 
 ## Config ▶
 ![SecurityConfig](https://github.com/user-attachments/assets/28641a21-0e15-49a1-93be-906fb2823abc)
@@ -49,7 +49,7 @@
 ## Resources ▶
 ![application-properties](https://github.com/user-attachments/assets/f23c77fa-9438-489f-b2e4-ef89b9f87905)
 
-# Tested Results Using Postman API ![Postman Logo](https://www.getpostman.com/img/postman-logo-only.svg)
+# 🟨 Tested Results Using Postman API 
 
 ## UserController Tests ▶
 ### 1️⃣ Register User
@@ -153,7 +153,7 @@
 #### URL: http://localhost:8080/api/job-applications/1/status
 ![Update Job Application Status - PUT](https://github.com/user-attachments/assets/e0f58a13-c4c1-4785-a348-0624c36bf536)
 
-# Team Members ![Team Members Logo](https://img.icons8.com/material-outlined/24/team.png)
+# 🟦 Team Members 
 
 👨‍🎓**Lahiru Senavirathna** ([SE-LAPS](https://github.com/SE-LAPS))
  
@@ -167,10 +167,10 @@
 
 👨‍🎓**Deshan Narayana** ([deshanbsn](https://github.com/deshanbsn))
 
-# Project Plan ![Project Plan Logo](https://img.icons8.com/material-outlined/24/plan.png)
+# 🟩 Project Plan 
 
 ![WhatsApp Image 2024-06-09 at 12 21 57_69e1a44d](https://github.com/SE-LAPS/Fully-functional-Job-Portal-System/assets/87580847/55597553-303f-4874-bb2b-8645689d8871)
 
-# Project Time-Line ![Project Time-Line Logo](https://img.icons8.com/material-outlined/24/timeline.png)
+# 🟧 Project Time-Line 
 
 ![Time-line](https://github.com/SE-LAPS/Fully-functional-Job-Portal-System/assets/87580847/6060c6fc-63ff-4204-86b5-d48c4af4b214)
