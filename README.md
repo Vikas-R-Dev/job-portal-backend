@@ -126,12 +126,11 @@ public class WebConfig implements WebMvcConfigurer {
 
 1. Check Backend:```http://localhost:8080/api/endpoint```
 2. Check Frontend:``` http://localhost:3000```
-3. Troubleshooting:
+3. Troubleshooting:<br>
          1.MySQL Connection Issues: Ensure that MySQL server is running and that you've configured the correct username and password in your Spring Boot application.properties or application.yml.<br>
          2.CORS Issues: Double-check your CORS configuration in the Spring Boot application.<br>
          3.Frontend Errors: Open the browser console (F12) to view any frontend errors and address them accordingly.
    
-### Install Node.js and npm
 
 # 🟨 Tested Results Using Postman API 🟨
 
