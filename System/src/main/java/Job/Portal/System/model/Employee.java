@@ -10,21 +10,24 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.Column;
 import lombok.Data;
 
+/**
+ * Represents an employee or a company in the job portal system.
+ */
 @Data
 @Entity
 @Table(name = "employees")
 public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id;  // Unique identifier for the employee
 
     @OneToOne
     @JoinColumn(name = "user_id", unique = true)
-    private User user;
+    private User user;  // Reference to the associated user (unique)
 
     @Column(name = "company_name", nullable = false)
-    private String companyName;
+    private String companyName;  // Name of the company
 
     @Column(columnDefinition = "TEXT")
-    private String description;
+    private String description;  // Description of the company or employee
 }
