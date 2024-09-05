@@ -53,7 +53,103 @@
 ### 1️⃣ Register User
 #### Method: POST
 #### URL: http://localhost:8080/api/users/register
+![Register User -POST](https://github.com/user-attachments/assets/c8cdfaa5-89b1-4f09-a671-4837725449ad)
+![Register Company -POST](https://github.com/user-attachments/assets/26893aaf-0f63-4ea2-a4f7-a82ec4b5c96d)
 
+### 2️⃣ Get User by Username
+#### Method: GET
+#### URL: http://localhost:8080/api/users/username/testuser
+![Get User by Username -GET](https://github.com/user-attachments/assets/59cb691e-752d-4567-a664-7940f296e217)
+
+## EmployeeController Tests ▶
+### 1️⃣ Register Employee
+#### Method: POST
+#### URL: http://localhost:8080/api/employees/register
+![Register Employee -POST](https://github.com/user-attachments/assets/d2f5405a-6cf5-401d-8ea2-5e13366716a0)
+
+### 2️⃣ Update Employee Profile
+#### Method: PUT
+#### URL: http://localhost:8080/api/employees/update
+![Update Employee Profile - PUT](https://github.com/user-attachments/assets/9b505c43-aa87-4410-b76b-afeb034e5d41)
+
+### 3️⃣ Get Employee by User ID
+#### Method: GET
+#### URL: http://localhost:8080/api/employees/user/1
+![Get Employee by User ID - GET](https://github.com/user-attachments/assets/0d25d387-bb02-463c-8a5a-14d2b1c7afc6)
+
+## JobCategoryController Tests ▶
+### 1️⃣ Add Job Category
+#### Method: POST
+#### URL: http://localhost:8080/api/job-categories
+![Add Job Category - POST](https://github.com/user-attachments/assets/92398bc1-c42c-420d-91fb-d505a591cd13)
+
+### 2️⃣ Update Job Category
+#### Method: PUT
+#### URL: http://localhost:8080/api/job-categories/1
+![Update Job Category -PUT](https://github.com/user-attachments/assets/38539a20-fb94-4488-b0d0-106b19953257)
+
+### 3️⃣ Get All Job Categories
+#### Method: GET
+#### URL: http://localhost:8080/api/job-categories
+![Get All Job Categories -GET](https://github.com/user-attachments/assets/dbc8feee-b39c-4339-ae11-e76bc45ea962)
+
+### 4️⃣ Delete Job Category
+#### Method: DELETE
+#### URL: http://localhost:8080/api/job-categories/1
+![Delete Job Category - DELETE](https://github.com/user-attachments/assets/7dd837a9-2fbd-4c49-88f7-3944b6c8e026)
+
+## JobController Tests ▶
+### 1️⃣ Add Job
+#### Method: POST
+#### URL: http://localhost:8080/api/jobs
+![Add Job - POST](https://github.com/user-attachments/assets/ebc1c0fb-2f00-4536-b04a-66ba3e3ad76c)
+![Add Job - POST-1](https://github.com/user-attachments/assets/3204ecd5-092a-4517-b218-d3664a527b81)
+
+### 2️⃣ Get Jobs by Company
+#### Method: GET
+#### URL: http://localhost:8080/api/jobs/company/1
+![Get Jobs by Company-GET](https://github.com/user-attachments/assets/3d6f448d-208c-4d0a-8d37-fd17428cc981)
+
+### 3️⃣ Get All Jobs
+#### Method: GET
+#### URL: http://localhost:8080/api/jobs
+![Get All Jobs-GET](https://github.com/user-attachments/assets/51e41322-74d1-42a1-9cb6-03f1e59940a5)
+
+### 4️⃣ Search Jobs
+#### Method: GET
+#### URL: http://localhost:8080/api/jobs/search?keyword=software
+![Search Jobs-GET](https://github.com/user-attachments/assets/4de69149-eb1d-41a7-81a1-825e7222dc09)
+
+### 5️⃣ Get Jobs by Category
+#### Method: GET
+#### URL: http://localhost:8080/api/jobs/category/1
+![Get Jobs by Category-GET](https://github.com/user-attachments/assets/9ee2e815-b8cd-4fee-9d4a-8a4d3bca513d)
+
+## JobApplicationController Tests ▶
+### 1️⃣ Apply for Job
+#### Method: POST
+#### URL: http://localhost:8080/api/job-applications
+![Apply for Job-POST](https://github.com/user-attachments/assets/c265b3f4-a353-4589-b575-6fb003977a58)
+
+### 2️⃣ Get Job Applications by Job Seeker
+#### Method: GET
+#### URL: http://localhost:8080/api/job-applications/job-seeker/1
+![Get Job Applications by Job Seeker-GET](https://github.com/user-attachments/assets/f197b16a-6ff3-49de-b368-44fe10c9c10e)
+
+### 3️⃣ Get Job Applications by Job
+#### Method: GET
+#### URL: http://localhost:8080/api/job-applications/job/1
+![Get Job Applications by Job -GET](https://github.com/user-attachments/assets/558a3705-9f3e-4016-8c5e-e03e2b75e146)
+
+### 4️⃣ Get All Job Applications
+#### Method: GET
+#### URL: http://localhost:8080/api/job-applications
+![Get All Job Applications - GET](https://github.com/user-attachments/assets/8c80a8df-5f97-432f-a015-a928c5a33d4f)
+
+### 5️⃣ Update Job Application Status
+#### Method: PUT
+#### URL: http://localhost:8080/api/job-applications/1/status
+![Update Job Application Status - PUT](https://github.com/user-attachments/assets/e0f58a13-c4c1-4785-a348-0624c36bf536)
 
 # Team Members 👯
 
