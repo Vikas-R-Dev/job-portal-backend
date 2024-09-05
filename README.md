@@ -48,6 +48,13 @@
 ## Resources ▶
 ![application-properties](https://github.com/user-attachments/assets/f23c77fa-9438-489f-b2e4-ef89b9f87905)
 
+# Tested Results Using Postman API 👨‍💻
+## UserController Tests ▶
+### 1️⃣ Register User
+#### Method: POST
+#### URL: http://localhost:8080/api/users/register
+
+
 # Team Members 👯
 
 👨‍🎓**Lahiru Senavirathna** ([SE-LAPS](https://github.com/SE-LAPS))
