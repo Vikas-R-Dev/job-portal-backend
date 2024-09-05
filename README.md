@@ -1,4 +1,4 @@
-# Fully-Functional-Job-Portal-System-BackEnd !(https://www.oracle.com/favicon.ico) !(https://spring.io/img/homepage/illustration-spring-boot.svg)
+# Fully-Functional-Job-Portal-System-BackEnd ![Java Logo](https://upload.wikimedia.org/wikipedia/commons/6/6e/Java_Logo_256x256.png) ![Spring Boot Logo](https://spring.io/img/homepage/illustration-spring-boot.svg)
       ⏩DEA-II GROUP PROJECT GROUP_06⏪ 
 
       
