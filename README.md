@@ -53,6 +53,48 @@
 ## Resources ▶
 ![application-properties](https://github.com/user-attachments/assets/f23c77fa-9438-489f-b2e4-ef89b9f87905)
 
+# 🟫 Job Portal Application Setup Guide 🟫
+
+This guide will help you set up and run a Spring Boot backend application, a React.js frontend application, and use MySQL Workbench as the database management tool.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your machine:
+
+- **MySQL**: Download from [MySQL website](https://dev.mysql.com/downloads/).
+- **MySQL Workbench**: Included with MySQL installation.
+- **Node.js** (includes npm): Download from [Node.js website](https://nodejs.org/en).
+- **Java Development Kit (JDK)**: Ensure Java 8 or higher is installed.
+- **Maven**: Included with most IDEs or can be installed separately.
+
+## 1. Set Up MySQL Database
+
+### Install MySQL
+
+1. Download and install MySQL from the official [MySQL website](https://dev.mysql.com/downloads/).
+2. Follow the installation wizard to complete the setup.
+
+### Configure MySQL Workbench
+
+1. **Open MySQL Workbench**.
+2. **Create a new connection**:
+    - Click on the `+` icon next to "MySQL Connections".
+    - Fill in the connection details (e.g., host, port, username, password).
+    - Test the connection and save it.
+3. **Create a new schema**:
+    - Click on your newly created connection.
+    - Go to the "Schemas" tab and right-click to create a new schema.
+    - Name it `Job_Portal`.
+
+## 2. Set Up and Run the Spring Boot Backend
+
+### Clone the Spring Boot Project
+
+```bash
+git clone <repository_url>
+cd <project_directory>
+
+
 # 🟨 Tested Results Using Postman API 🟨
 
 ## UserController Tests ▶
