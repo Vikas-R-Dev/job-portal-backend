@@ -94,12 +94,12 @@ Before you begin, ensure you have the following installed on your machine:
 2. Run the Spring Boot Application
       You can run the Spring Boot application in two ways:<br>
          Via IDE<br>
-            1-Open the Spring Boot project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse).<br>
-            2-Right-click the main application class (annotated with @SpringBootApplication).<br>
-            3-Select Run.<br>
+            - Open the Spring Boot project in your preferred IDE (e.g., IntelliJ IDEA, Eclipse).<br>
+            - Right-click the main application class (annotated with @SpringBootApplication).<br>
+            - Select Run.<br>
          Via Command Line<br>
-           1-Open a terminal.<br>
-           2-Navigate to the root directory of your Spring Boot project: ```./mvnw spring-boot:run```
+            - Open a terminal.<br>
+            - Navigate to the root directory of your Spring Boot project: ```./mvnw spring-boot:run```
 3.The backend should now be running, typically on: ```http://localhost:8080``` 
 
 ## 3. Set Up and Run the React.js Frontend
@@ -127,9 +127,9 @@ public class WebConfig implements WebMvcConfigurer {
 1. Check Backend:```http://localhost:8080/api/endpoint```
 2. Check Frontend:``` http://localhost:3000```
 3. Troubleshooting:<br>
-         1.MySQL Connection Issues: Ensure that MySQL server is running and that you've configured the correct username and password in your Spring Boot application.properties or application.yml.<br>
-         2.CORS Issues: Double-check your CORS configuration in the Spring Boot application.<br>
-         3.Frontend Errors: Open the browser console (F12) to view any frontend errors and address them accordingly.
+         - MySQL Connection Issues: Ensure that MySQL server is running and that you've configured the correct username and password in your Spring Boot application.properties or application.yml.<br>
+         - CORS Issues: Double-check your CORS configuration in the Spring Boot application.<br>
+         - Frontend Errors: Open the browser console (F12) to view any frontend errors and address them accordingly.
    
 
 # 🟨 Tested Results Using Postman API 🟨
