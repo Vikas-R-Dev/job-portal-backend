@@ -2,61 +2,98 @@ package Job.Portal.System.service;
 
 import Job.Portal.System.model.User;
 import Job.Portal.System.repository.UserRepository;
-import Job.Portal.System.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Optional;
 
-@Service
-public class UserServiceImpl implements UserService {
+@Service  // This class handles user-related business logic and interacts with the repository
+public class UserServiceImpl implements UserService, UserDetailsService {
 
-    // Inject the UserRepository bean
+    // Injecting UserRepository dependency
     @Autowired
     private UserRepository userRepository;
 
-    // Inject the PasswordEncoder bean for encoding passwords
+    // Injecting PasswordEncoder dependency for encoding passwords
     @Autowired
     private PasswordEncoder passwordEncoder;
 
     /*
-     * Method to register a new user
-     * This method encodes the user's password using the PasswordEncoder before saving the user to the repository.
+     * Register a new user
+     * This method registers a new user in the system after checking for existing usernames and emails.
+     * @param user The user to be registered
+     * @return The registered user
+     * @throws RuntimeException if the username or email already exists
      */
     @Override
     public User registerUser(User user) {
-        user.setPassword(passwordEncoder.encode(user.getPassword()));  // Encode and set the user's password.
-        return userRepository.save(user);  // Save and return the new user.
+        // Check if username or email already exists
+        if (userRepository.findByUsername(user.getUsername()) != null) {
+            throw new RuntimeException("Username already exists");
+        }
+        if (userRepository.findByEmail(user.getEmail()) != null) {
+            throw new RuntimeException("Email already exists");
+        }
+
+        // Encode the password before saving
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+
+        // Save the user and return the saved entity
+        return userRepository.save(user);
     }
 
     /*
-     * Method to find a user by their ID
-     * This method retrieves a user from the repository using their ID.
-     * It returns an Optional containing the user if found, or an empty Optional if not.
+     * Load user by username
+     * This method loads a user by their username for authentication purposes.
+     * @param username The username of the user to load
+     * @return The UserDetails object containing user information
+     * @throws UsernameNotFoundException if the user is not found
+     */
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        User user = userRepository.findByUsername(username);  // Find the user by username
+        if (user == null) {
+            throw new UsernameNotFoundException("User not found with username: " + username);
+        }
+        // Return a UserDetails object for Spring Security
+        return new org.springframework.security.core.userdetails.User(user.getUsername(), user.getPassword(), new ArrayList<>());
+    }
+
+    /*
+     * Find user by ID
+     * This method finds a user by their ID.
+     * @param id The ID of the user to find
+     * @return An Optional containing the found user or empty if not found
      */
     @Override
     public Optional<User> findById(Long id) {
-        return userRepository.findById(id);  // Find and return the user by ID, wrapped in an Optional.
+        return userRepository.findById(id);
     }
 
     /*
-     * Method to find a user by their username
-     * This method retrieves a user from the repository using their username.
-     * It returns the User object if found.
+     * Find user by username
+     * This method finds a user by their username.
+     * @param username The username of the user to find
+     * @return The found user or null if not found
      */
     @Override
     public User findByUsername(String username) {
-        return userRepository.findByUsername(username);  // Find and return the user by username.
+        return userRepository.findByUsername(username);
     }
 
     /*
-     * Method to find a user by their email
-     * This method retrieves a user from the repository using their email.
-     * It returns the User object if found.
+     * Find user by email
+     * This method finds a user by their email.
+     * @param email The email of the user to find
+     * @return The found user or null if not found
      */
     @Override
     public User findByEmail(String email) {
-        return userRepository.findByEmail(email);  // Find and return the user by email.
+        return userRepository.findByEmail(email);
     }
 }
