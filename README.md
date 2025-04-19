@@ -7,13 +7,7 @@
 
 ![Screenshot 2024-06-29 094812](https://github.com/SE-LAPS/Fully-functional-Job-Portal-System/assets/87580847/23eaa99d-23c9-4486-9c72-54986a48efd2)
 
-# ◀ Project Demo In YouTube ▶
 
-<div align="center">
-
-[CodeShow LapZ YouTube Channel](https://tinyurl.com/YouTubeLapZ)
-
-</div>
 
 <p align="center">  
 <img src="https://github.com/user-attachments/assets/f9011461-ffd4-4a3b-98ca-8e0b63ab7685" />
@@ -247,19 +241,6 @@ public class WebConfig implements WebMvcConfigurer {
 #### URL: http://localhost:8080/api/job-applications/1/status
 ![Update Job Application Status - PUT](https://github.com/user-attachments/assets/e0f58a13-c4c1-4785-a348-0624c36bf536)
 
-# 🟦 Team Members 🟦
-
-👨‍🎓**Lahiru Senavirathna** ([SE-LAPS](https://github.com/SE-LAPS))
- 
-👨‍🎓**Thevindu Ransara** ([trsrathnayaka](https://github.com/trsrathnayaka))
-  
-👨‍🎓**Wasana Muthumali** ([muthumaliperera](https://github.com/muthumaliperera))
-  
-👨‍🎓**Prasitha Samaarachchi** ([Prasitha7](https://github.com/Prasitha7))
-
-👨‍🎓**Chamith Dilshan** ([Chamith-Dilshan](https://github.com/Chamith-Dilshan))
-
-👨‍🎓**Deshan Narayana** ([deshanbsn](https://github.com/deshanbsn))
 
 # 🟩 Project Plan 🟩
 
